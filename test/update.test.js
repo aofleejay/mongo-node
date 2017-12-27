@@ -61,11 +61,11 @@ describe('Updating records', () => {
       })
   })
 
-  it('A user can have thier postcount incremented by 1', (done) => {
-    User.update({ name: 'John Doe' }, { $inc: { postCount: 1 } })
+  it('A user can have thier likes incremented by 1', (done) => {
+    User.update({ name: 'John Doe' }, { $inc: { likes: 1 } })
       .then(() => User.findOne({ name: 'John Doe' }))
       .then((user) => {
-        expect(user.postCount).to.equal(1)
+        expect(user.likes).to.equal(1)
         done()
       })
   })
