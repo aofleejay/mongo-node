@@ -1,2 +1,2 @@
-# Learning Mongo #
-Learning mongo with mongoose.js
+# Learn Mongo #
+Learn mongo with mongoose.js
