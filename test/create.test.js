@@ -1,7 +1,7 @@
 const { expect } = require('chai')
 const User = require('../src/User')
 
-describe('Creating records', () => {
+describe('Creating documents', () => {
   it('Save a user', (done) => {
     const user = new User({ name: 'John Doe' })
 
